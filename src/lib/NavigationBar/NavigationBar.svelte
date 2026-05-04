@@ -182,7 +182,7 @@
         languageMenu.style.display = "";
         languageMenu.style.left = `4px`;
         languageMenu.style.top = `3rem`;
-        if (window._isPenguinModLauncher) {
+        if (window._isGaiaModLauncher) {
             languageMenu.style.top = "initial";
             languageMenu.style.left = `calc(5rem + 4px)`;
             languageMenu.style.bottom = "4px";
@@ -351,7 +351,7 @@
     style={isAprilFirst ? `background-color: ${randomColor} !important` : ""}
 >
     <a class="logo" href="/">
-        <img class="logo-image" src="/navicon.png" alt="PenguinMod" />
+        <img class="logo-image" src="/navicon.png" alt="GaiaMod" />
     </a>
     <div style="margin-right: 12px;" />
     <div class="logo-launcher-margin" />
@@ -486,10 +486,10 @@
 
 <style>
     :root {
-        --penguinmod-color: #00c3ff;
+        --gaiamod-color: #2D2DD2;
     }
     :global(body.dark-mode) {
-        --penguinmod-color: #009ccc;
+        --gaiamod-color: #2424A8;
     }
 
     .bar {
@@ -497,7 +497,7 @@
         width: 100%;
         left: 0px;
         top: 0px;
-        background: var(--penguinmod-color);
+        background: var(--gaiamod-color);
         height: 3rem;
         color: white;
         display: flex;
@@ -696,7 +696,7 @@
 
     .profile-dropdown-menu {
         position: fixed;
-        background: var(--penguinmod-color);
+        background: var(--gaiamod-color);
         border-radius: 4px;
         border: 1px solid rgba(0, 0, 0, 0.15);
         padding: 4px 0;
