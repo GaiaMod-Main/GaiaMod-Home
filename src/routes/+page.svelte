@@ -489,7 +489,7 @@
                 <UserDisplay
                     link="https://gaiamod-main.github.io/editor.html"
                     userLink={`https://github.com/gaiawindwave90`}
-                    text="Try out the colors feature i the editor!"
+                    text="Try out the colors feature in the editor!"
                     author="gaiawindwave90"
                     image="https://avatars.githubusercontent.com/u/4597024?v=4"
                 />
