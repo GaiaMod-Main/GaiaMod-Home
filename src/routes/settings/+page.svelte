@@ -126,7 +126,7 @@
                 },
             )
             .catch((e) => {
-                console.log("AAAAAAAAAAAAa", e);
+                console.log("AAAAAAAAAAHHHHH!!! LOL", e);
                 loggedIn = false;
             });
     });
