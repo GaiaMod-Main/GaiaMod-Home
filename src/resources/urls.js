@@ -11,7 +11,7 @@ export default {
     /**
      * Gaia'S Commits
      */
-commitsHistory: "https://api.github.com/repos/gaiawindwave90/commits",
+commitsHistory: "https://api.github.com/repos/GaiaMod-Main/GaiaMod-Home/commits",
 	
     /**
      * GaiaMod's normal page

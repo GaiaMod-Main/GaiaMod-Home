@@ -454,14 +454,14 @@
         />
     {/if}
     {#if loggedIn === false}
-        <BarPage on:click={login}>
+        <BarPage on:click={() => (location.href = "signin")}>
             <LocalizedText
                 text="Sign in"
                 key="navigation.login"
                 lang={currentLang}
             />
         </BarPage>
-        <BarPage on:click={() => (location.href = "GaiaMod-Home/signup")}>
+        <BarPage on:click={() => (location.href = "signup")}>
             <LocalizedText
                 text="Sign up"
                 key="navigation.signup"
