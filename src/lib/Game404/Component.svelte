@@ -150,7 +150,7 @@
     {:else if currentMenu === 'death'}
         <img
             src="/secret/penginDead.svg"
-            alt="Penguin Deid"
+            alt="ShipGuy Dead"
             class="menu-penguin"
             style="margin-bottom: 10px;position: relative;z-index: {gameState.mustBeTop ? 9999 : 9990}"
             bind:this={gameAssets.penguin}
@@ -175,7 +175,7 @@
     >
     <img
         src="/secret/pengin{currentMenu === 'died' ? 'Dead' : ''}.svg"
-        alt="Penguin"
+        alt="Ship Guy"
         class="game-penguin"
         style="top: {gameState.playerY}px; z-index: {gameState.mustBeTop ? 9999 : 9990}"
         bind:this={gameAssets.penguin}

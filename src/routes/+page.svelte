@@ -298,10 +298,10 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Home</title>
-    <meta name="title" content="PenguinMod - Home" />
-    <meta property="og:title" content="PenguinMod - Home" />
-    <meta property="twitter:title" content="PenguinMod - Home" />
+    <title>GaiaMod - Home</title>
+    <meta name="title" content="GaiaMod - Home" />
+    <meta property="og:title" content="GaiaMod - Home" />
+    <meta property="twitter:title" content="GaiaMod - Home" />
     <meta
         name="description"
         content="The area where featured projects and community stuff & info is shown."
@@ -310,8 +310,8 @@
         property="twitter:description"
         content="The area where featured projects and community stuff & info is shown."
     />
-    <meta property="og:url" content="https://penguinmod.com/" />
-    <meta property="twitter:url" content="https://penguinmod.com/" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/" />
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/" />
     <meta
         name="google-site-verification"
         content="07oAYybKa_CH2le7AvPJkNNtwhZSq_G0V4d9P7AIZYE"
@@ -325,7 +325,7 @@
 
     <Alert
         onlyShowID={"donatee:_3"}
-        text={"PenguinMod is a free-to-use visual coding website. Your support can help us keep the website working!"}
+        text={"GaiaMod is a free-to-use visual coding website. Your support can help us keep the website working!"}
         textBreakup={true}
         textColor={"white"}
         hasImage={true}
@@ -347,13 +347,17 @@
                         lang={currentLang}
                     />
                 </h1>
-                <h1>
-                    <LocalizedText
-                        text="Built off of TurboWarp and Scratch"
-                        key="home.introduction2"
-                        dolink={true}
-                        lang={currentLang}
-                    />
+                 <h1>
+                    Built off of <a
+                        href="https://scratch.org"
+                        style="color:orange;">Scratch</a
+                    >,
+                    <a href="https://turbowarp.org" style="color:red;"
+                        >TurboWarp</a
+                    >, and
+                    <a href="https://penguinmod.com" style="color:cyan;"
+                        >PenguinMod</a
+                    >
                 </h1>
                 <Button
                     label="<img src='/tryit.svg' width='32px' style='margin-right:8px'></img>"
@@ -367,7 +371,7 @@
                             lang={currentLang}
                         />
                     {:else}
-                        EEEAAAOOO
+                        AAEEOOO! KILLER TOFU!
                     {/if}
                 </Button>
             </div>
@@ -375,31 +379,31 @@
             <!-- only render video if we are definetly not logged in -->
             {#if loggedIn === false}
                 {#if !thingyActive}
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube-nocookie.com/embed/g8zwb4W3G8Q"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                        class="example-video"
-                    />
+                    <video
+                    width="426.666667"
+                    height="240"
+                    autoplay="true"
+                    muted="true"
+                    loop="true"
+                    class="example-video"
+                >
+                    <source src="/example.mp4" type="video/mp4" />
+                    <track kind="captions" />
+                </video>
                 {:else}
                     <iframe
-                        src="/eao.html"
-                        title="The Thingy"
-                        width="426.666667"
-                        height="240"
-                        frameborder="0"
-                        class="example-video"
-                    />
+                    src="/eao.html"
+                    title="The Thingy"
+                    width="426.666667"
+                    height="240"
+                    frameborder="0"
+                    class="example-video"
+                />
                 {/if}
             {:else}
                 <img
                     src="/penguins/frontpage.svg"
-                    alt="PenguinMod"
+                    alt="GaiaMod"
                     style="margin-right: 8rem;"
                 />
             {/if}
@@ -415,7 +419,7 @@
                 />
                 <p>
                     <LocalizedText
-                        text="PenguinMod is made by English-speaking developers. Expect minor issues and sorry for any translation errors."
+                        text="GaiaMod is only made by a one English-speaking developer. Expect minor issues and sorry for any translation errors."
                         key="translation.warning"
                         lang={currentLang}
                     />
@@ -446,13 +450,6 @@
                 />
             </Button>
             <Button label="GitHub" link={LINK.github} />
-            <Button link={LINK.wiki}>
-                <LocalizedText
-                    text="Community Wiki"
-                    key="home.footer.sections.community.wiki"
-                    lang={currentLang}
-                />
-            </Button>
         </div>
     {/if}
 
@@ -461,18 +458,18 @@
             <img src="/warning.png" draggable="false" alt="Warning" />
             <p>
                 <LocalizedText
-                    text="PenguinMod is made by English-speaking developers. Expect minor issues and sorry for any translation errors."
+                    text="GaiaMod is only made by a one English-speaking developer. Expect minor issues and sorry for any translation errors."
                     key="translation.warning"
                     lang={currentLang}
                 />
             </p>
         </div>
     {/if}
-
+	<center><img src="/logo.png" alt="GaiaMod" style="width: 20rem"></center>
     <p style="width: 100%; text-align: center;">
         <i>
             <LocalizedText
-                text="Scratch Note: Please don't mention PenguinMod on Scratch, we have different rules compared to Scratch! 😅"
+                text="Scratch Note: You can only mention GaiaMod if there is a bug, please."
                 key="home.scratchnote"
                 lang={currentLang}
             />

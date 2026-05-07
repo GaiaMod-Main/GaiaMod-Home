@@ -132,7 +132,7 @@
 
     /* featured projects */
     .project[data-featured="true"] {
-        background-color: #ffc400;
+        background-color: #00F7FF;
         background: linear-gradient(
             145deg,
             rgba(255, 196, 0, 1) 0%,
@@ -149,7 +149,7 @@
         text-overflow: ellipsis;
         text-decoration: none;
         width: 100%;
-        color: #4d97ff;
+        color: #534DFF;
         display: block;
         white-space: nowrap;
         overflow: hidden;

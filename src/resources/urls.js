@@ -4,43 +4,43 @@ import { PUBLIC_STUDIO_URL } from "$env/static/public";
 
 export default {
     /**
-     * PenguinMod's normal page
+     * GaiaMod's normal page
      */
     base: `${PUBLIC_STUDIO_URL}/`,
 
     /**
-     * PenguinMod's editor page
+     * GaiaMod's editor page
      */
     editor: `${PUBLIC_STUDIO_URL}/editor.html`,
 
     /**
-     * PenguinMod's credits page
+     * GaiaMod's credits page
      */
     credits: `${PUBLIC_STUDIO_URL}/credits.html`,
     
     /**
-     * PenguinMod's contact page
+     * GaiaMod's contact page
      */
     contact: `${PUBLIC_STUDIO_URL}/contact.html`,
 
     /**
-     * PenguinMod's terms of service page
+     * GaiaMod's terms of service page
      */
     terms: "/terms",
 
     /**
-     * PenguinMod's privacy policy page
+     * GaiaMod's privacy policy page
      */
     privacy: "/privacy",
 
     /**
-     * PenguinMod's guideline pages for services
+     * GaiaMod's guideline pages for services
      */
     guidelines: {
         /**
-         * PenguinMod's project uploading guidelines
+         * GaiaMod's project uploading guidelines
          */
-        projects: `${PUBLIC_STUDIO_URL}/PenguinMod-Guidelines/PROJECTS`
+        projects: `${PUBLIC_STUDIO_URL}/GaiaMod-Guidelines/PROJECTS`
     },
 
     /**
@@ -49,37 +49,38 @@ export default {
     donate: {
         scratch: "https://www.scratchfoundation.org/donate",
         turbowarp: "https://github.com/sponsors/GarboMuffin"
+        penguinmod: "https://penguinmod.com/donate"
     },
 
     /**
-     * PenguinMod's project page
+     * GaiaMod's project page
      */
     projects: `${ProjectApi.OriginApiUrl}/`,
 
     /**
-     * PenguinMod's my stuff page
+     * GaiaMod's my stuff page
      */
     mystuff: `${ProjectApi.OriginApiUrl}/mystuff`,
 
     /**
-     * PenguinMod's home page
+     * GaiaMod's home page
      */
-    home: "https://penguinmod.com/",
+    home: "https://gaiamod-main.github.io/GaiaMod-Home/",
 
     /**
-     * PenguinMod's packager page
+     * GaiaMod's packager page
      */
-    packager: `${PUBLIC_STUDIO_URL}/PenguinMod-Packager/`,
+    packager: `${PUBLIC_STUDIO_URL}/GaiaMod-Packager/`,
 
     /**
-     * PenguinMod's unofficial wiki
+     * GaiaMod's unofficial wiki
      */
     wiki: "https://wiki.penguinmod.com/wiki/Main_Page",
 
     /**
-     * PenguinMod's Discord invite
+     * Gaia's Discord invite
      */
-    discord: "https://discord.gg/NZ9MBMYTZh",
+    discord: "https://discord.gg/fFnNT8RGav",
 
     /**
      * Scratch's website
@@ -90,19 +91,24 @@ export default {
      * TurboWarp's website
      */
     turbowarp: "https://turbowarp.org",
-
+	
     /**
-     * PenguinMod's github page
+     * PenguinMod's website
      */
-    github: "https://github.com/PenguinMod/",
+    penguinmod: "https://penguinmod.com/",
 
     /**
-     * PenguinMod's basic API
+     * GaiaMod's github page
+     */
+    github: "https://github.com/GaiaMod-Main/",
+
+    /**
+     * GaiaMod's basic API
      */
     basicApi: "https://penguinmod-basic-api.derpygamer2142.com/",
 
     /**
      * The admin panel for pm projects api
      */
-    adminPanel: "https://penguinmod.com/panel"
+    adminPanel: "https://gaiamod-main.github.io/GaiaMod-Home/panel"
 }
