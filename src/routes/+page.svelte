@@ -514,7 +514,74 @@
                 </a>
             </div>
         </ContentCategory>
-
+        {:else}
+            <div class="welcome-back-card">
+                <img
+                    src={`${PUBLIC_API_URL}/api/v1/users/getpfp?username=${loggedInUsername}`}
+                    alt="Profile"
+                    class="profile-picture"
+                />
+                <h1>
+                    {TranslationHandler.text(
+                        "home.welcome",
+                        currentLang,
+                    ).replace("$1", loggedInUsername)}
+                </h1>
+                <div class="welcome-back-row">
+                    <a href={LINK.editor} class="welcome-back-no-underline">
+                        <button class="welcome-back-button">
+                            <div class="welcome-back-icon-container">
+                                <img
+                                    src="/messagesstatic/create.svg"
+                                    alt="Create"
+                                    draggable="false"
+                                />
+                            </div>
+                            <LocalizedText
+                                text="Create"
+                                key="navigation.create"
+                                lang={currentLang}
+                            />
+                        </button>
+                    </a>
+                    <a href={`/mystuff`} class="welcome-back-no-underline">
+                        <button class="welcome-back-button">
+                            <div class="welcome-back-icon-container">
+                                <img
+                                    src="/messagesstatic/mystuff.svg"
+                                    alt="My Stuff"
+                                    draggable="false"
+                                />
+                            </div>
+                            <LocalizedText
+                                text="My Stuff"
+                                key="navigation.mystuff"
+                                lang={currentLang}
+                            />
+                        </button>
+                    </a>
+                    <a
+                        href={`/profile?user=${loggedInUsername}`}
+                        class="welcome-back-no-underline"
+                    >
+                        <button class="welcome-back-button">
+                            <div class="welcome-back-icon-container">
+                                <img
+                                    src="/messagesstatic/profile.svg"
+                                    alt="Profile"
+                                    draggable="false"
+                                />
+                            </div>
+                            <LocalizedText
+                                text="Profile"
+                                key="navigation.profile"
+                                lang={currentLang}
+                            />
+                        </button>
+                    </a>
+                </div>
+            </div>
+        {/if}
         {#if loggedIn && selectedFrontTabSelected === "feed"}
             <ContentCategory
                 header={TranslationHandler.text(
