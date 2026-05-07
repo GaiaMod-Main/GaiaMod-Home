@@ -48,7 +48,7 @@ export default {
      */
     donate: {
         scratch: "https://www.scratchfoundation.org/donate",
-        turbowarp: "https://github.com/sponsors/GarboMuffin"
+        turbowarp: "https://github.com/sponsors/GarboMuffin",
         penguinmod: "https://penguinmod.com/donate"
     },
 
