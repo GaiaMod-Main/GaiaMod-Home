@@ -1111,13 +1111,6 @@
                         lang={currentLang}
                     />
                 </a>
-                <a target="_blank" href={LINK.wiki}>
-                    <LocalizedText
-                        text="Wiki"
-                        key="home.footer.sections.community.wiki"
-                        lang={currentLang}
-                    />
-                </a>
                 <a
                     target="_blank"
                     href={`https://gaiamod-main.github.io/GaiaMod-Home/redirect?t=${encodeURIComponent(btoa(LINK.discord))}`}
@@ -1132,27 +1125,6 @@
                         lang={currentLang}
                     />
                 </p>
-                <a href={LINK.terms}>
-                    <LocalizedText
-                        text="Terms of Service"
-                        key="home.footer.sections.info.terms"
-                        lang={currentLang}
-                    />
-                </a>
-                <a href={LINK.privacy}>
-                    <LocalizedText
-                        text="Privacy Policy"
-                        key="home.footer.sections.info.privacy"
-                        lang={currentLang}
-                    />
-                </a>
-                <a target="_blank" href={"/guidelines/uploading"}>
-                    <LocalizedText
-                        text="Uploading Guidelines"
-                        key="home.footer.sections.info.guidelines"
-                        lang={currentLang}
-                    />
-                </a>
                 <a target="_blank" href={LINK.contact}>
                     <LocalizedText
                         text="Contact Us"
@@ -1169,7 +1141,8 @@
                         lang={currentLang}
                     />
                 </p>
-                <a href={"/support"}>GaiaMod</a>
+                <a target="_blank" href={LINK.donate.penguinmod}>PenguinMod</a>
+                <a target="_blank" href={LINK.donate.turbowarp}>TurboWarp</a>
                 <a target="_blank" href={LINK.donate.scratch}>Scratch</a>
             </div>
         </div>
@@ -1177,6 +1150,19 @@
 </div>
 
 <style>
+    :root {
+        --gaiamod-color: #2D2DD2;
+        --gaiamod-section-info-color: hsla(240, 65%, 55%, 1);
+        --gaiamod-section-links-color: hsla(240, 65%, 60%, 1);
+        --gaiamod-footer-color: #CFD2FF;
+    }
+    :global(body.dark-mode) {
+        --gaiamod-color: #2424A8;
+        --gaiamod-section-info-color: hsla(240, 65%, 50%, 1);
+        --gaiamod-section-links-color: hsla(240, 65%, 55%, 1);
+        --gaiamod-footer-color: #00058A;
+    }
+
     * {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
@@ -1189,7 +1175,7 @@
         width: 100%;
         padding: 24px 0px 48px;
         border-top: rgba(0, 0, 0, 0.3) 1px solid;
-        background-color: #CFD2FF;
+        background-color: var(--gaiamod-footer-color);
         font-weight: bold;
         margin-top: 4px;
         /* border-top-left-radius: 20%; */
@@ -1217,7 +1203,6 @@
     :global(body.dark-mode) .footer {
         /* border-top: rgba(255, 255, 255, 0.1) 1px solid; */
         border-top: rgba(255, 255, 255, 0.3) 1px solid;
-        /* background: transparent; */
         /* background: #0059ff15; */
         /* border-top-left-radius: 20%; */
         /* border-top-right-radius: 20%; */
@@ -1262,7 +1247,7 @@
     }
 
     .section-info {
-        background: hsla(240, 65%, 55%, 1);
+        background: var(--gaiamod-section-info-color);
         height: 24rem;
         color: white;
         display: flex;
@@ -1276,7 +1261,7 @@
         justify-content: space-around;
     }
     .section-links {
-        background: hsla(240, 65%, 60%, 1);
+        background: var(--gaiamod-section-links-color);
         color: white;
         display: flex;
         flex-direction: row;
