@@ -1,8 +1,14 @@
 import ProjectApi from "./projectapi"
+import ProjectApi from "./projectapi"
 
 import { PUBLIC_STUDIO_URL } from "$env/static/public";
 
 export default {
+    /**
+     * Gaia-Zone
+     */
+    originpage: `https://gaiawindwave90.github.io/`,
+	
     /**
      * GaiaMod's normal page
      */

@@ -385,6 +385,11 @@
             <img src="/create.png" alt="Create" />
         </BarPage>
     </div>
+	<div class="only-non-launcher">
+        <BarPage link={LINK.originpage}>
+               Gaia-Zone
+        </BarPage>
+    </div>
     <BarSearch
         placeholder={Translations.textSafe(
             "navigation.search",
