@@ -85,11 +85,11 @@
                     );
 
                     const permittedPages = [
-                        "/unfinishedsignup",
-                        "/terms",
-                        "/privacy",
-                        "/contact",
-                        "/guidelines/uploading",
+                        "GaiaMod-Home/unfinishedsignup",
+                        "GaiaMod-Home/terms",
+                        "GaiaMod-Home/privacy",
+                        "GaiaMod-Home/contact",
+                        "GaiaMod-Home/guidelines/uploading",
                     ];
                     if (
                         (!countryEntered || !birthdayEntered) &&
@@ -448,7 +448,7 @@
                 lang={currentLang}
             />
         </BarPage>
-        <BarPage on:click={() => (location.href = "/signup")}>
+        <BarPage on:click={() => (location.href = "GaiaMod-Home/signup")}>
             <LocalizedText
                 text="Sign up"
                 key="navigation.signup"

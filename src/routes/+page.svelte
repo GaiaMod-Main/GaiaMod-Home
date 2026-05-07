@@ -1320,7 +1320,7 @@
     }
 
     .section-info {
-        background: #00c3ffad;
+        background: #ADD5FF;
         height: 24rem;
         color: white;
         display: flex;
@@ -1334,7 +1334,7 @@
         justify-content: space-around;
     }
     .section-links {
-        background: #00c3ff28;
+        background: #0011FF;
         color: white;
         display: flex;
         flex-direction: row;
