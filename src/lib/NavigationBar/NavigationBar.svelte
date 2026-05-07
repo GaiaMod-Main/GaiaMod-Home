@@ -386,6 +386,11 @@
         </BarPage>
     </div>
 	<div class="only-non-launcher">
+        <BarPage on:click={() => (location.href = "https://gaiamod.betteruptime.com/")}>
+               Status
+        </BarPage>
+    </div>
+	<div class="only-non-launcher">
         <BarPage link={LINK.originpage}>
                Gaia-Zone
         </BarPage>
@@ -495,6 +500,13 @@
         title="navigation.language"
         lang={currentLang}
     />
+<BarButton
+        highlighted="true"
+        link={LINK.discord}
+        noredirect="true"
+    >
+        Join our Discord!
+    </BarButton>
 </div>
 
 <style>

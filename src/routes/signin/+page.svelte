@@ -488,7 +488,7 @@
                     link={LINK.editor}
                 >
                     <LocalizedText
-                        text="Editor"
+                        text="Create a project"
                         key="home.footer.sections.website.editor"
                         lang={currentLang}
                     />
