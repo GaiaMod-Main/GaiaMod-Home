@@ -477,7 +477,7 @@
             />
             <p>
                 <LocalizedText
-                    text="Whoops! Our server's having some problems. Try again later."
+                    text="Uh-oh! Our server's having some problems. Try again later."
                     key="home.server.error"
                     lang={currentLang}
                 />
