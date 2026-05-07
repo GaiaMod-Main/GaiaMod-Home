@@ -354,10 +354,10 @@
         <img class="logo-image" src="/navicon.png" alt="GaiaMod" />
     </a>
     <div style="margin-right: 12px;" />
- <div class="logo-launcher-margin" />
-	<div class="moon">
+    <div class="logo-launcher-margin" />
+    <div class="moon">
 	<BarPage
-		label="<img src='moon.svg' alt='ThemeSwitcher'>"
+		label="<img src='/moon.svg' alt='ThemeSwitcher'>"
 		style="padding:0.5rem"
 		classActor={"themeSwitcher"}
 		on:click={switchTheme}
@@ -365,49 +365,34 @@
     </div>
 	<div class="sun">
 		<BarPage
-			label="<img src='sun.svg' alt='ThemeSwitcher'>"
+			label="<img src='/sun.svg' alt='ThemeSwitcher'>"
 			style="padding:0.5rem"
 			classActor={"themeSwitcher"}
 			on:click={switchTheme}
 		/>
 	</div>
 	<div class="only-non-launcher">
-		<BarPage link={LINK.editor}>
-			<LocalizedText
-				text="Create"
-				key="navigation.create"
-				lang={currentLang}
-			/>
-		</BarPage>
-	</div>
-	<div class="only-non-launcher">
-		<BarPage link={"https://gaiamod.betteruptime.com/"}>
-			<LocalizedText
-				text="Status Page"
-			/>
-		</BarPage>
-	</div>
-	<div class="only-non-launcher">
-		<BarPage link={"https://gaiawindwave90.github.io/"}>
-			<LocalizedText
-				text="Gaia-Zone"
-			/>
-		</BarPage>
-	</div>
-	<div class="only-non-launcher">
-		<BarPage link={"upload"}>
-			<LocalizedText
-				text="Upload"
-			/>
-		</BarPage>
-	</div>
-	<div class="only-launcher">
-		<BarPage id="__home_navigation_create_button">
-			<img src="create.png" alt="Create" />
-		</BarPage>
-	</div>
-	<BarSearch placeholder={searchBar} />
-	<BarButton
+        <BarPage link={LINK.editor}>
+            <LocalizedText
+                text="Create"
+                key="navigation.create"
+                lang={currentLang}
+            />
+        </BarPage>
+    </div>
+    <div class="only-launcher">
+        <BarPage id="__home_navigation_create_button">
+            <img src="/create.png" alt="Create" />
+        </BarPage>
+    </div>
+    <BarSearch
+        placeholder={Translations.textSafe(
+            "navigation.search",
+            currentLang,
+            "Search for projects...",
+        )}
+    />
+    <!-- <BarButton
 		highlighted="true"
 		link={LINK.discord}
 		noredirect="true"
@@ -421,76 +406,90 @@
 			/>
 		</div>
 		<div class="discord-button-icon">
-			<img src="discord_white.png" alt="Discord" />
+			<img src="/discord_white.png" alt="Discord" />
 		</div>
-	</BarButton>
-	<!-- <BarPage
+	</BarButton> -->
+    <!-- <BarPage
 		link={LINK.discord}
-		label="<img src='discord_white.png' width='25' alt='Discord'>"
+		label="<img src='/discord_white.png' width='25' alt='Discord'>"
 		style="padding:0.5rem"
 	/> -->
-	{#if loggedIn === true}
-		<BarPage
-			link="/messages"
-			label={"<img src='messages/messages.svg' width='25' alt='Messages'>"}
-			style="padding:0.5rem"
-		>
-			{#if messageCount > 0}
-				<div class="message-badge">
-					{#if messageCount > 9}
-						!
-					{:else}
-						{messageCount}
-					{/if}
-				</div>
-			{/if}
-		</BarPage>
-		<BarPage
-			link="/mystuff"
-			label="<img src='/messages/mystuff.svg' width='25' alt='My Stuff'>"
-			style="padding:0.5rem"
-		/>
-	{/if}
-	{#if (isAdmin || isApprover) && loggedIn}
-		<BarPage
-			link="/panel"
-			label="<img src='/messages/panel.svg' width='25' alt='Panel'>"
-			style="padding:0.5rem"
-		/>
-	{/if}
-	{#if loggedIn === false}
-		<BarPage on:click={login}>
-			<LocalizedText
-				text="Sign in"
-				key="navigation.login"
-				lang={currentLang}
-			/>
-		</BarPage>
-	{:else if loggedIn === true}
-		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<button
-			class="profile-dropdown"
-			bind:this={accountButton}
-			on:click={openAccountMenu}
-		>
-			<img
-				src={`https://trampoline.turbowarp.org/avatars/by-username/${accountUsername}`}
-				alt="Profile Picture"
-				class="profile-picture"
-			/>
-			<p>{accountUsername}</p>
-			<img src="/dropdown-caret.png" style="margin: 0 4px" alt="v" />
-		</button>
-	{/if}
-	<BarPage
-		label="<img src='/globe.svg' alt='LanguageSwitcher'><img src='/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
-		style={"padding: 0.5rem; position: absolute; left: 4px;" +
-			(Object.keys(availableLanguages).length <= 1
-				? "display: none;"
-				: "")}
-		classActor={"languageButton"}
-		on:click={openLanguageMenu}
-	/>
+    {#if loggedIn === true}
+        <BarPage
+            link="/messages"
+            label={"<img src='/messagesstatic/messages.svg' width='25' alt='Messages'>"}
+            style="padding:0.5rem"
+            title="messages.title"
+            lang={currentLang}
+        >
+            {#if messageCount > 0}
+                <div class="message-badge">
+                    {#if messageCount > 9}
+                        !
+                    {:else}
+                        {messageCount}
+                    {/if}
+                </div>
+            {/if}
+        </BarPage>
+        <BarPage
+            link="/mystuff"
+            label="<img src='/messagesstatic/mystuff.svg' width='25' alt='My Stuff'>"
+            style="padding:0.5rem"
+            title="mystuff.title"
+            lang={currentLang}
+        />
+    {/if}
+    {#if (isAdmin || isApprover) && loggedIn}
+        <BarPage
+            link="/panel"
+            label="<img src='/messagesstatic/panel.svg' width='25' alt='Panel'>"
+            style="padding:0.5rem"
+            title="Admin Panel"
+        />
+    {/if}
+    {#if loggedIn === false}
+        <BarPage on:click={login}>
+            <LocalizedText
+                text="Sign in"
+                key="navigation.login"
+                lang={currentLang}
+            />
+        </BarPage>
+        <BarPage on:click={() => (location.href = "GaiaMod-Home/signup")}>
+            <LocalizedText
+                text="Sign up"
+                key="navigation.signup"
+                lang={currentLang}
+            />
+        </BarPage>
+    {:else if loggedIn === true}
+        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <button
+            class="profile-dropdown"
+            bind:this={accountButton}
+            on:click={openAccountMenu}
+        >
+            <img
+                src={`${PUBLIC_API_URL}/api/v1/users/getpfp?username=${accountUsername}&reload=${pfpkey}`}
+                alt="Profile Picture"
+                class="profile-picture"
+            />
+            <p>{accountUsername}</p>
+            <img src="/dropdown-caret.png" style="margin: 0 4px" alt="v" />
+        </button>
+    {/if}
+    <BarPage
+        label="<img src='/globe.svg' alt='LanguageSwitcher'><img src='/dropdown-caret.png' style='margin: 0 4px' alt='v'>"
+        style={"padding: 0.5rem; position: absolute; left: 4px;" +
+            (Object.keys(availableLanguages).length <= 1
+                ? "display: none;"
+                : "")}
+        classActor={"languageButton"}
+        on:click={openLanguageMenu}
+        title="navigation.language"
+        lang={currentLang}
+    />
 </div>
 
 <style>
@@ -768,4 +767,16 @@
     :global(body.dark-mode) .only-non-dark-mode {
         display: none;
     }
+	.moon {
+    	display: block;
+	}
+	.sun {
+    	display: none;
+	}
+	:global(body.dark-mode) .moon {
+    	display: none;
+	}
+	:global(body.dark-mode) .sun {
+    	display: block;
+	}
 </style>
