@@ -336,6 +336,13 @@
         buttonHref={"/support"}
     />
     <StatusAlert />
+    <Alert
+        onlyShowID={"downtime:_3"}
+        text={"We might gona have a plan to make our own API server soon..."}
+        textBreakup={true}
+        backColor={"Yellow"}
+        textColor={"white"}
+    />
 
     {#if !loggedIn}
         <div class="section-info">
