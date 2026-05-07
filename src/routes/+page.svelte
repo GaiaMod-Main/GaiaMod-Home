@@ -341,7 +341,7 @@
         text={"We might gona have a plan to make our own API server soon..."}
         textBreakup={true}
         backColor={"Yellow"}
-        textColor={"white"}
+        textColor={"Black"}
     />
 
     {#if !loggedIn}
