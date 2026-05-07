@@ -1,5 +1,4 @@
 import ProjectApi from "./projectapi"
-import ProjectApi from "./projectapi"
 
 import { PUBLIC_STUDIO_URL } from "$env/static/public";
 
