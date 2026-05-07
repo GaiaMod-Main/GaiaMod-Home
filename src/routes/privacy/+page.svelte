@@ -321,6 +321,11 @@ Language.onChange((lang) => {
             Better Storage can also access any info that Scratch Auth can.
             The owner of Better Storage may also view any saved data using their keys for security and safety.
         </p>
+     <h2>AI Extensions</h2>
+            <p>In GaiaMod we have multiple AI extensions powered by diffrent technologies.
+                We have extensions for chatbots like Google Gemini and OpenAI's ChatGPT. Both of these extensions were made by the <a href="https://rubyteam.tech/">Ruby Dev Team</a>, but we will most likely make changes to the extensions for
+                GaiaMod. We also use ml5 powered extensions which are all created by <a href="https://github.com/champierre">champierre</a>.
+            </p>
         <h3>User-submitted - GaiaAI</h3>
         <p>
             GaiaAI will connect to <a href="https://freeai.logise1123.workers.dev/">freeai.logise1123.workers.dev</a> by default for AI communication. This site can access:</p>
