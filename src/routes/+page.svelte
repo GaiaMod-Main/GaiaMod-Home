@@ -394,7 +394,7 @@
                     loop="true"
                     class="example-video"
                 >
-                    <source src="/example.mp4" type="video/mp4" />
+                    <source src="/showcase.mp4" type="video/mp4" />
                     <track kind="captions" />
                 </video>
                 {:else}
