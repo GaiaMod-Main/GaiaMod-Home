@@ -763,7 +763,7 @@
                 "home.sections.weeklyfeatured",
                 currentLang,
             )}
-            seemore={`/search?q=featured%3A`}
+            seemore={`https://penguinmod.com/search?q=featured%3A`}
             style="width:65%;"
             stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
         >
@@ -834,7 +834,7 @@
                 "home.sections.mostvoted",
                 currentLang,
             )}
-            seemore={`/search?q=sort%3Avotes%20featured%3Aexclude`}
+            seemore={`https://penguinmod.com/search?q=sort%3Avotes%20featured%3Aexclude`}
             style="width:65%;"
             stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
         >
@@ -980,7 +980,7 @@
                         currentLang,
                     ),
                 ).replace("$1", tagForProjects.slice(1))}
-                seemore={`/search?q=%23${tagForProjects.slice(1)}`}
+                seemore={`https://penguinmod.com/search?q=%23${tagForProjects.slice(1)}`}
                 style="width:65%;"
                 stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
             >
@@ -996,7 +996,7 @@
                 "home.sections.todaysprojects",
                 currentLang,
             )}
-            seemore={`/search?q=newest%3A`}
+            seemore={`https://penguinmod.com/search?q=newest%3A`}
             style="width:65%;"
             stylec="height: 244px;overflow-x:auto;overflow-y:hidden;"
         >
