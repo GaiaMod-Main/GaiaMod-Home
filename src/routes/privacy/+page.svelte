@@ -323,7 +323,7 @@ Language.onChange((lang) => {
         </p>
      <h2>AI Extensions</h2>
             <p>In GaiaMod we have multiple AI extensions powered by diffrent technologies.
-                We have extensions for chatbots like Google Gemini and OpenAI's ChatGPT. Both of these extensions were made by the <a href="https://rubyteam.tech/">Ruby Dev Team</a>, but we will most likely make changes to the extensions for
+                We have extensions for chatbots like Google Gemini and OpenAI's ChatGPT. Both of these extensions were made by the <a href="https://ruby-devs.vercel.app/">Ruby Dev Team</a>, but we will most likely make changes to the extensions for
                 GaiaMod. We also use ml5 powered extensions which are all created by <a href="https://github.com/champierre">champierre</a>.
             </p>
         <h3>User-submitted - GaiaAI</h3>
@@ -347,7 +347,7 @@ Language.onChange((lang) => {
             <br>
             <br>
             GaiaMod will not ask the user to confirm this action if the project is compiled using
-            <a href="{PUBLIC_STUDIO_URL}/GaiaMod-Packager/">the GaiaMod packager.</a>
+            <a href="https://gaiamod-main.github.io/GaiaMod-Packager/">the GaiaMod packager.</a>
             <br>
             In this case it is up to the user's browser to prompt the user if they would like to allow the website
             to access their location.
@@ -383,14 +383,11 @@ Language.onChange((lang) => {
         <p>Join <a href="https://discord.gg/fFnNT8RGav">our Discord Server</a></p>
         
         <div style="width: 100%; height: 32px;"></div>
-
         <p>
-            <a href="/terms">Terms of Service</a>
+            <p><a href="https://www.youtube.com/@GaiaWindWave90">Head developer's YouTube profile</a></p>
         </p>
-        <p>
-            <a href="{PUBLIC_STUDIO_URL}/contact.html">Contact Us</a>
-        </p>
-        
+          <h4>Also while your here check out the flag counter we have.<h4>
+                <iframe src="https://nmsderp.is-a.dev/flag-counter.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
         <div style="width: 100%; height: 32px;"></div>
     </main>
 </div>
