@@ -349,7 +349,7 @@
             <div style="margin-left: 8rem;">
                 <h1>
                     <LocalizedText
-                        text="Block-based coding with tons of capabilities"
+                        text="Block-based coding with a bunch of of special capabilities"
                         key="home.introduction1"
                         lang={currentLang}
                     />
@@ -485,110 +485,39 @@
 
     <div class="section-categories">
         {#if !loggedIn}
-            <ContentCategory
-                header={TranslationHandler.text(
-                    "home.sections.whatsnew",
-                    currentLang,
-                )}
-                seemore={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-            >
-                <div class="category-content">
-                    {#if updates.length > 0}
-                        {#each updates as update}
-                            <UserDisplay
-                                link={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-                                userLink={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-                                text={update.cleanContent}
-                                author={update.authorName}
-                                image={update.authorImage}
-                            />
-                            <a target="_blank" href={update.image}>
-                                <button class="update-image-wrapper">
-                                    <img
-                                        src={update.image}
-                                        alt={update.cleanContent}
-                                        title={update.cleanContent}
-                                        class="update-image"
-                                    />
-                                </button>
-                            </a>
-                        {/each}
-                    {:else}
-                        <LoadingSpinner />
-                    {/if}
-                </div>
-            </ContentCategory>
-        {:else}
-            <div class="welcome-back-card">
-                <img
-                    src={`${PUBLIC_API_URL}/api/v1/users/getpfp?username=${loggedInUsername}`}
-                    alt="Profile"
-                    class="profile-picture"
+          <ContentCategory
+            header={TranslationHandler.text(
+                "home.sections.whatsnew",
+                currentLang,
+            )}
+            seemore={`https://github.com/GaiaMod-Main/`}
+        >
+            <div class="category-content">
+                <UserDisplay
+                    link="https://gaiamod-main.github.io/editor.html"
+                    userLink={`https://github.com/gaiawindwave90`}
+                    text="Try out the colors feature i the editor!"
+                    author="gaiawindwave90"
+                    image="https://avatars.githubusercontent.com/u/4597024?v=4"
                 />
-                <h1>
-                    {TranslationHandler.text(
-                        "home.welcome",
-                        currentLang,
-                    ).replace("$1", loggedInUsername)}
-                </h1>
-                <div class="welcome-back-row">
-                    <a href={LINK.editor} class="welcome-back-no-underline">
-                        <button class="welcome-back-button">
-                            <div class="welcome-back-icon-container">
-                                <img
-                                    src="/messagesstatic/create.svg"
-                                    alt="Create"
-                                    draggable="false"
-                                />
-                            </div>
-                            <LocalizedText
-                                text="Create"
-                                key="navigation.create"
-                                lang={currentLang}
-                            />
-                        </button>
-                    </a>
-                    <a href={`/mystuff`} class="welcome-back-no-underline">
-                        <button class="welcome-back-button">
-                            <div class="welcome-back-icon-container">
-                                <img
-                                    src="/messagesstatic/mystuff.svg"
-                                    alt="My Stuff"
-                                    draggable="false"
-                                />
-                            </div>
-                            <LocalizedText
-                                text="My Stuff"
-                                key="navigation.mystuff"
-                                lang={currentLang}
-                            />
-                        </button>
-                    </a>
-                    <a
-                        href={`/profile?user=${loggedInUsername}`}
-                        class="welcome-back-no-underline"
-                    >
-                        <button class="welcome-back-button">
-                            <div class="welcome-back-icon-container">
-                                <img
-                                    src="/messagesstatic/profile.svg"
-                                    alt="Profile"
-                                    draggable="false"
-                                />
-                            </div>
-                            <LocalizedText
-                                text="Profile"
-                                key="navigation.profile"
-                                lang={currentLang}
-                            />
-                        </button>
-                    </a>
-                </div>
+                <a
+                    target="_blank"
+                    href="https://gaiamod-main.github.io/editor.html"
+                >
+                    <button class="update-image-wrapper">
+                        <img
+                            src="https://gaiawindwave90.github.io/img/art/colored.png"
+                            alt="You have been colored!"
+                            class="update-image"
+                        />
+                    </button>
+                </a>
             </div>
-        {/if}
+        </ContentCategory>
+
         {#if loggedIn && selectedFrontTabSelected === "feed"}
             <ContentCategory
-                header={TranslationHandler.textSafe(
+                header={TranslationHandler.text(
                     "home.sections.feed",
                     currentLang,
                 )}
@@ -601,16 +530,16 @@
                                     link={getFeedUrl(
                                         message.type,
                                         message.username,
-                                        message.data,
+                                        message.content,
                                     )}
                                     userLink={`/profile?user=${message.username}`}
                                     text={getFeedText(
                                         message.type,
                                         message.username,
-                                        message.data,
+                                        message.content,
                                     )}
                                     author={message.username}
-                                    image={`${PUBLIC_API_URL}/api/v1/users/getpfp?username=${message.username}`}
+                                    image={`https://trampoline.turbowarp.org/avatars/by-username/${message.username}`}
                                 />
                             {/if}
                         {/each}
@@ -628,9 +557,9 @@
                     {/if}
                 </div>
             </ContentCategory>
-        {:else if loggedIn && selectedFrontTabSelected === "commit"}
+        {:else if !loggedIn || selectedFrontTabSelected === "commit"}
             <ContentCategory
-                header={TranslationHandler.textSafe(
+                header={TranslationHandler.text(
                     "home.sections.githubcommits",
                     currentLang,
                 )}
@@ -677,82 +606,28 @@
                 </div>
             </ContentCategory>
         {:else if loggedIn && selectedFrontTabSelected === "new"}
-            <ContentCategory
-                header={TranslationHandler.textSafe(
-                    "home.sections.whatsnew",
-                    currentLang,
-                )}
-                seemore={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-            >
+            <ContentCategory header={"What Am I Doing?"}>
                 <div class="category-content">
-                    {#if updates.length > 0}
-                        {#each updates as update}
-                            <UserDisplay
-                                link={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-                                userLink={`https://discord.com/channels/1033551490331197462/1038252360184643674`}
-                                text={update.cleanContent}
-                                author={update.authorName}
-                                image={update.authorImage}
-                            />
-                            <a target="_blank" href={update.image}>
-                                <button class="update-image-wrapper">
-                                    <img
-                                        src={update.image}
-                                        alt="Screenshot"
-                                        class="update-image"
+                    <div class="category-content">
+                        {#if myFeed.length > 0}
+                            {#each myFeed as activity}
+                                <!-- {#if commit}
+                                    <UserDisplay
+                                        link={commit.html_url}
+                                        userLink={commit.author
+                                            ? commit.author.html_url
+                                            : ""}
+                                        text={censor(commit.commit.message)}
+                                        author={commit.author
+                                            ? commit.author.login
+                                            : ""}
+                                        image={commit.author
+                                            ? commit.author.avatar_url
+                                            : ""}
                                     />
-                                </button>
-                            </a>
-                        {/each}
-                    {:else}
-                        <LoadingSpinner />
-                    {/if}
-                </div>
-            </ContentCategory>
-        {:else if !loggedIn || selectedFrontTabSelected === "news"}
-            <ContentCategory
-                header={TranslationHandler.textSafe(
-                    "home.sections.informational",
-                    currentLang,
-                )}
-            >
-                <!-- NOTE: This section is entirely hard-coded for time-relevant stuff, but avoid making new classes for a topic. -->
-                <div class="category-news">
-                    <div class="category-news-content">
-                        <h2 style="margin-block:4px;">Spring PenguinJam has ended!</h2>
-                        <div style="width:100%">
-                            <p>
-                                Time's up everyone, the 2026 Spring PenguinJam has ended!
-                                <br />
-                                Thanks for submitting your projects this year!
-                                <br />
-                                We're going to start ranking your projects now.
-                                Please wait until we are done with ranking!
-                            </p>
-                            <img
-                                src="/events/news/penguinjamspring2026.webp"
-                                alt="Spring PenguinJam 2026"
-                                style="width:100%;"
-                            />
-                        </div>
-                    </div>
-                    <div class="category-footer">
-                        <p>
-                            {#if currentLang === "en"}
-                                {LoadingTips[
-                                    Math.round(
-                                        Math.random() *
-                                            (LoadingTips.length - 1),
-                                    )
-                                ]}
-                            {:else}
-                                <LocalizedText
-                                    text="PenguinNews is not translated in your language. Sorry! :("
-                                    key="home.sections.informational.notranslation"
-                                    lang={currentLang}
-                                />
-                            {/if}
-                        </p>
+                                {/if} -->
+                            {/each}
+                        {/if}
                     </div>
                 </div>
             </ContentCategory>
