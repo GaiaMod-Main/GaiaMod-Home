@@ -821,6 +821,13 @@
                                     key="home.server.error"
                                     lang={currentLang}
                                 />
+								<Button link={LINK.editor}>
+                                <LocalizedText
+                                    text="Create a project"
+                                    key="home.footer.sections.website.createAProject"
+                                    lang={currentLang}
+                                />
+                            </Button>
                             </p>
                         {/if}
                     </div>
@@ -885,6 +892,13 @@
                                     key="home.server.error"
                                     lang={currentLang}
                                 />
+								<Button link={LINK.editor}>
+                                <LocalizedText
+                                    text="Create a project"
+                                    key="home.footer.sections.website.createAProject"
+                                    lang={currentLang}
+                                />
+                            </Button>
                             </p>
                         {/if}
                     </div>
@@ -949,6 +963,13 @@
                                         key="home.server.error"
                                         lang={currentLang}
                                     />
+									<Button link={LINK.editor}>
+                                <LocalizedText
+                                    text="Create a project"
+                                    key="home.footer.sections.website.createAProject"
+                                    lang={currentLang}
+                                />
+                            </Button>
                                 </p>
                             {/if}
                         </div>
