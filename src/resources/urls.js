@@ -9,6 +9,11 @@ export default {
     originpage: `https://gaiawindwave90.github.io/`,
 	
     /**
+     * Gaia'S Commits
+     */
+commitsHistory: "https://api.github.com/repos/gaiawindwave90/commits",
+	
+    /**
      * GaiaMod's normal page
      */
     base: `${PUBLIC_STUDIO_URL}/`,
@@ -47,6 +52,7 @@ export default {
          */
         projects: `${PUBLIC_STUDIO_URL}/GaiaMod-Guidelines/PROJECTS`
     },
+	
 
     /**
      * Donation pages for sites
