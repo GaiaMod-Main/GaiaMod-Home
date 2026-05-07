@@ -148,14 +148,14 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - My Stuff</title>
-    <meta name="title"                   content="PenguinMod - My Stuff" />
-    <meta property="og:title"            content="PenguinMod - My Stuff" />
-    <meta property="twitter:title"       content="PenguinMod - My Stuff">
+    <title>GaiaMod - My Stuff</title>
+    <meta name="title"                   content="GaiaMod - My Stuff" />
+    <meta property="og:title"            content="GaiaMod - My Stuff" />
+    <meta property="twitter:title"       content="GaiaMod - My Stuff">
     <meta name="description"             content="View your own projects & content.">
     <meta property="twitter:description" content="View your own projects & content.">
-    <meta property="og:url"              content="https://penguinmod.com/mystuff">
-    <meta property="twitter:url"         content="https://penguinmod.com/mystuff">
+    <meta property="og:url"              content="https://gaiamod-main.github.io/GaiaMod-Home/mystuff">
+    <meta property="twitter:url"         content="https://gaiamod-main.github.io/GaiaMod-Home/mystuff">
 </svelte:head>
 
 <NavigationBar />
@@ -213,7 +213,7 @@
             <div class="login-prompt">
                 <p>
                     <LocalizedText
-                        text="Please log in to view your PenguinMod projects."
+                        text="Please log in to view your GaiaMod projects."
                         key="mystuff.login"
                         lang={currentLang}
                     />

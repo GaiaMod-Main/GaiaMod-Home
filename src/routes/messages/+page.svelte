@@ -277,17 +277,17 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Messages</title>
-    <meta name="title" content="PenguinMod - Messages" />
-    <meta property="og:title" content="PenguinMod - Messages" />
-    <meta property="twitter:title" content="PenguinMod - Messages" />
+    <title>GaiaMod - Messages</title>
+    <meta name="title" content="GaiaMod - Messages" />
+    <meta property="og:title" content="GaiaMod - Messages" />
+    <meta property="twitter:title" content="GaiaMod - Messages" />
     <meta name="description" content="See your messages or alerts." />
     <meta
         property="twitter:description"
         content="See your messages or alerts."
     />
-    <meta property="og:url" content="https://penguinmod.com/messages" />
-    <meta property="twitter:url" content="https://penguinmod.com/messages" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/messages" />
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/messages" />
 </svelte:head>
 
 <NavigationBar />

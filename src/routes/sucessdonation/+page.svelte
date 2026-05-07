@@ -20,20 +20,20 @@
 </script>
 
 <svelte:head>
-  <title>PenguinMod - Thanks for donating!</title>
-  <meta name="title" content="PenguinMod - Thanks for donating!" />
-  <meta property="og:title" content="PenguinMod - Thanks for donating!" />
-  <meta property="twitter:title" content="PenguinMod - Thanks for donating!" />
+  <title>GaiaMod - Thanks for donating!</title>
+  <meta name="title" content="GaiaMod - Thanks for donating!" />
+  <meta property="og:title" content="GaiaMod - Thanks for donating!" />
+  <meta property="twitter:title" content="GaiaMod - Thanks for donating!" />
   <meta
     name="description"
-    content="Help support PenguinMod and it's development!"
+    content="Help support GaiaMod and it's development!"
   />
   <meta
     property="twitter:description"
-    content="Help support PenguinMod and it's development!"
+    content="Help support GaiaMod and it's development!"
   />
-  <meta property="og:url" content="https://penguinmod.com/support" />
-  <meta property="twitter:url" content="https://penguinmod.com/support" />
+  <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/support" />
+  <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/support" />
 </svelte:head>
 
 <NavigationBar />
@@ -56,7 +56,7 @@
   <div class="section-content">
     <p>
       <LocalizedText
-          text="We hope you continue to support PenguinMod, even if it's not with money but by sharing and using our service!"
+          text="We hope you continue to support GaiaMod, even if it's not with money but by sharing and using our service!"
           key="donated.subtitle"
           lang={currentLang}
       />
@@ -85,7 +85,7 @@
     <div style="height: 32px;" />
     <p>
       <LocalizedText
-          text="Your donation can help us fund PenguinMod's server and domain!"
+          text="Your donation can help us fund GaiaMod's server and domain!"
           key="donated.location"
           lang={currentLang}
       />

@@ -145,7 +145,7 @@
         "My Favorite",
         "My Favorite Things",
         "What I like",
-        "Why I use PenguinMod",
+        "Why I use GaiaMod",
         "My Life's Work",
         "What I Do",
         "In my spare time...",
@@ -668,7 +668,7 @@
             const base64 = encodeURIComponent(btoa(href));
             tokens[idx].attrSet(
                 "href",
-                `https://penguinmod.com/redirect?t=${base64}`,
+                `https://gaiamod-main.github.io/GaiaMod-Home/redirect?t=${base64}`,
             );
         }
 
@@ -726,14 +726,14 @@
                 if (/^\d{6,}$/.test(id)) {
                     return `<a href="${PUBLIC_STUDIO_URL}/#${id}" target="_blank">#${id}</a>`;
                 }
-                return `<a href="https://penguinmod.com/search?q=%23${id}">#${id}</a>`;
+                return `<a href="https://gaiamod-main.github.io/GaiaMod-Home/search?q=%23${id}">#${id}</a>`;
             });
             textChanged = true;
         }
         if (newText.match(regexRules.user)) {
             newText = newText.replace(regexRules.user, function (name) {
                 name = name.replace("@", "");
-                return `<a href="https://penguinmod.com/profile?user=${name}">@${name}</a>`;
+                return `<a href="https://gaiamod-main.github.io/GaiaMod-Home/profile?user=${name}">@${name}</a>`;
             });
             textChanged = true;
         }
@@ -816,26 +816,26 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - {user ? user : "Profile"}</title>
-    <meta name="title" content="PenguinMod - {user ? user : 'User Profile'}" />
+    <title>GaiaMod - {user ? user : "Profile"}</title>
+    <meta name="title" content="GaiaMod - {user ? user : 'User Profile'}" />
     <meta
         property="og:title"
-        content="PenguinMod - {user ? user : 'User Profile'}"
+        content="GaiaMod - {user ? user : 'User Profile'}"
     />
     <meta
         property="twitter:title"
-        content="PenguinMod - {user ? user : 'User Profile'}"
+        content="GaiaMod - {user ? user : 'User Profile'}"
     />
     <meta
         name="description"
-        content="View {user ? user : 'this user'}'s profile on PenguinMod."
+        content="View {user ? user : 'this user'}'s profile on GaiaMod."
     />
     <meta
         property="twitter:description"
-        content="View {user ? user : 'this user'}'s profile on PenguinMod."
+        content="View {user ? user : 'this user'}'s profile on GaiaMod."
     />
-    <meta property="og:url" content="https://penguinmod.com/profile" />
-    <meta property="twitter:url" content="https://penguinmod.com/profile" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/profile" />
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/profile" />
 </svelte:head>
 
 <NavigationBar />

@@ -122,31 +122,31 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Change Password With OAuth</title>
-    <meta name="title" content="PenguinMod - Change Password With OAuth" />
+    <title>GaiaMod - Change Password With OAuth</title>
+    <meta name="title" content="GaiaMod - Change Password With OAuth" />
     <meta
         property="og:title"
-        content="PenguinMod - Change Password With OAuth"
+        content="GaiaMod - Change Password With OAuth"
     />
     <meta
         property="twitter:title"
-        content="PenguinMod - Change Password With OAuth"
+        content="GaiaMod - Change Password With OAuth"
     />
     <meta
         name="description"
-        content="Change your password with OAuth for PenguinMod to access your account with a password or to just change it"
+        content="Change your password with OAuth for GaiaMod to access your account with a password or to just change it"
     />
     <meta
         property="twitter:description"
-        content="Change your password with OAuth for PenguinMod to access your account with a password or to just change it"
+        content="Change your password with OAuth for GaiaMod to access your account with a password or to just change it"
     />
     <meta
         property="og:url"
-        content="https://penguinmod.com/oauthchangepassword"
+        content="https://gaiamod-main.github.io/GaiaMod-Home/oauthchangepassword"
     />
     <meta
         property="twitter:url"
-        content="https://penguinmod.com/oauthchangepassword"
+        content="https://gaiamod-main.github.io/GaiaMod-Home/oauthchangepassword"
     />
 </svelte:head>
 
@@ -159,7 +159,7 @@
         <div class="profile-section">
             <img src="/account/profile_sheet.png" alt="Profiles" />
         </div>
-        <h1 style="margin-block:4px">PenguinMod</h1>
+        <h1 style="margin-block:4px">GaiaMod</h1>
         <p>
             <LocalizedText
                 text="Change/Set Your Password Using OAuth"

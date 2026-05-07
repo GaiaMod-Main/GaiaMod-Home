@@ -199,20 +199,20 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Login</title>
-    <meta name="title" content="PenguinMod - Login" />
-    <meta property="og:title" content="PenguinMod - Login" />
-    <meta property="twitter:title" content="PenguinMod - Login" />
+    <title>GaiaMod - Login</title>
+    <meta name="title" content="GaiaMod - Login" />
+    <meta property="og:title" content="GaiaMod - Login" />
+    <meta property="twitter:title" content="GaiaMod - Login" />
     <meta
         name="description"
-        content="Login for PenguinMod to start sharing your projects!"
+        content="Login for GaiaMod to start sharing your projects!"
     />
     <meta
         property="twitter:description"
-        content="Login for PenguinMod to start sharing your projects!"
+        content="Login for GaiaMod to start sharing your projects!"
     />
-    <meta property="og:url" content="https://penguinmod.com/signin" />
-    <meta property="twitter:url" content="https://penguinmod.com/signin" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/signin" />
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/signin" />
 </svelte:head>
 
 {#if !embed}
@@ -226,7 +226,7 @@
     {#if !apiOnlineChecking && apiOnlineResponding}
         <main>
             <img src="/penguins/signin.svg" alt="Profiles" />
-            <h1 style="margin-block:4px">PenguinMod</h1>
+            <h1 style="margin-block:4px">GaiaMod</h1>
             <p>
                 <LocalizedText
                     text="Login with your personal account"
@@ -244,7 +244,7 @@
                 ${TranslationHandler.textSafe(
                     "login.linkto.oldaccounts2025.line2",
                     currentLang,
-                    "Check the post [here](https://penguinmod.com/devposts/3-18-2025-shutdown-incident) for more information.",
+                    "Check the post [here](https://gaiamod-main.github.io/GaiaMod-Home/devposts/3-18-2025-shutdown-incident) for more information.",
                 )}`)}
             </div>
 

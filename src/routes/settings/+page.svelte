@@ -368,17 +368,17 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Settings</title>
-    <meta name="title" content="PenguinMod - Settings" />
-    <meta property="og:title" content="PenguinMod - Settings" />
-    <meta property="twitter:title" content="PenguinMod - Settings" />
+    <title>GaiaMod - Settings</title>
+    <meta name="title" content="GaiaMod - Settings" />
+    <meta property="og:title" content="GaiaMod - Settings" />
+    <meta property="twitter:title" content="GaiaMod - Settings" />
     <meta name="description" content="View your account settings." />
     <meta
         property="twitter:description"
         content="View your account settings."
     />
-    <meta property="og:url" content="https://penguinmod.com/settings" />
-    <meta property="twitter:url" content="https://penguinmod.com/settings" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/settings" />
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/settings" />
 </svelte:head>
 
 <NavigationBar bind:pfpkey={pfpReload} />

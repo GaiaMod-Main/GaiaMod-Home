@@ -71,14 +71,14 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Search</title>
-    <meta name="title"                   content="PenguinMod - Search{searchQuery ? ` for ${searchQuery}` : ''}" />
-    <meta property="og:title"            content="PenguinMod - Search{searchQuery ? ` for ${searchQuery}` : ''}" />
-    <meta property="twitter:title"       content="PenguinMod - Search{searchQuery ? ` for ${searchQuery}` : ''}">
-    <meta name="description"             content={searchQuery ? `View things under "${searchQuery}" on PenguinMod.` : 'View some stuff uploaded to PenguinMod under a certain query.'}>
-    <meta property="twitter:description" content={searchQuery ? `View things under "${searchQuery}" on PenguinMod.` : 'View some stuff uploaded to PenguinMod under a certain query.'}>
-    <meta property="og:url"              content="https://penguinmod.com/search">
-    <meta property="twitter:url"         content="https://penguinmod.com/search">
+    <title>GaiaMod - Search</title>
+    <meta name="title"                   content="GaiaMod - Search{searchQuery ? ` for ${searchQuery}` : ''}" />
+    <meta property="og:title"            content="GaiaMod - Search{searchQuery ? ` for ${searchQuery}` : ''}" />
+    <meta property="twitter:title"       content="GaiaMod - Search{searchQuery ? ` for ${searchQuery}` : ''}">
+    <meta name="description"             content={searchQuery ? `View things under "${searchQuery}" on GaiaMod.` : 'View some stuff uploaded to GaiaMod under a certain query.'}>
+    <meta property="twitter:description" content={searchQuery ? `View things under "${searchQuery}" on GaiaMod.` : 'View some stuff uploaded to GaiaMod under a certain query.'}>
+    <meta property="og:url"              content="https://gaiamod-main.github.io/GaiaMod-Home/search">
+    <meta property="twitter:url"         content="https://gaiamod-main.github.io/GaiaMod-Home/search">
 </svelte:head>
 
 <NavigationBar />

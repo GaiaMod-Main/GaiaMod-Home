@@ -325,7 +325,7 @@
 
     <Alert
         onlyShowID={"donatee:_3"}
-        text={"GaiaMod is a free-to-use powerful visual coding website. Your support can help us keep the website working!"}
+        text={"GaiaMod is a free-to-use powerful visual coding website based on PenguinMod. Your support can help us keep the website working!"}
         textBreakup={true}
         textColor={"white"}
         hasImage={true}
@@ -1091,7 +1091,7 @@
     <div class="footer">
         <p>
             <LocalizedText
-                text="PenguinMod is not affiliated with Scratch, TurboWarp, the Scratch Team, or the Scratch Foundation."
+                text="GaiaMod is not affiliated with PenguinMod, Scratch, TurboWarp, the Scratch Team, or the Scratch Foundation."
                 key="home.footer.notaffiliated"
                 lang={currentLang}
             />
@@ -1154,7 +1154,7 @@
                 </p>
                 <a
                     target="_blank"
-                    href={"https://github.com/PenguinMod/PenguinMod-Home/issues"}
+                    href={"https://github.com/GaiaMod-Main/GaiaMod-Home/issues"}
                 >
                     <LocalizedText
                         text="Report an issue"
@@ -1171,7 +1171,7 @@
                 </a>
                 <a
                     target="_blank"
-                    href={`https://penguinmod.com/redirect?t=${encodeURIComponent(btoa(LINK.discord))}`}
+                    href={`https://gaiamod-main.github.io/GaiaMod-Home/redirect?t=${encodeURIComponent(btoa(LINK.discord))}`}
                     >Discord</a
                 >
             </div>
@@ -1220,7 +1220,7 @@
                         lang={currentLang}
                     />
                 </p>
-                <a href={"/support"}>PenguinMod</a>
+                <a href={"/support"}>GaiaMod</a>
                 <a target="_blank" href={LINK.donate.scratch}>Scratch</a>
             </div>
         </div>

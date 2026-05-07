@@ -42,14 +42,14 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Support Us</title>
-    <meta name="title"                   content="PenguinMod - Support Us" />
-    <meta property="og:title"            content="PenguinMod - Support Us" />
-    <meta property="twitter:title"       content="PenguinMod - Support Us">
-    <meta name="description"             content="Help support PenguinMod and it's development!">
-    <meta property="twitter:description" content="Help support PenguinMod and it's development!">
-    <meta property="og:url"              content="https://penguinmod.com/support">
-    <meta property="twitter:url"         content="https://penguinmod.com/support">
+    <title>GaiaMod - Support Us</title>
+    <meta name="title"                   content="GaiaMod - Support Us" />
+    <meta property="og:title"            content="GaiaMod - Support Us" />
+    <meta property="twitter:title"       content="GaiaMod - Support Us">
+    <meta name="description"             content="Help support GaiaMod and it's development!">
+    <meta property="twitter:description" content="Help support GaiaMod and it's development!">
+    <meta property="og:url"              content="https://gaiamod-main.github.io/GaiaMod-Home/support">
+    <meta property="twitter:url"         content="https://gaiamod-main.github.io/GaiaMod-Home/support">
 </svelte:head>
 
 <NavigationBar />
@@ -68,7 +68,7 @@
             </h1>
             <p>
                 <LocalizedText
-                    text="Help PenguinMod pay for our servers, link & more!"
+                    text="Help GaiaMod pay for our servers, link & more!"
                     key="donate.description"
                     lang={currentLang}
                 />
@@ -84,7 +84,7 @@
             <div class="section-discussion">
                 <p>
                     <LocalizedText
-                        text="PenguinMod helps people around the world create the games that they want and share the fun stuff they make with the community."
+                        text="GaiaMod helps people around the world create the games that they want and share the fun stuff they make with the community."
                         key="donate.message1"
                         lang={currentLang}
                     />
@@ -93,7 +93,7 @@
                     {@html generateMarkdown(`${TranslationHandler.textSafe(
                         "donate.people1",
                         currentLang,
-                        "In the last month, ***$1 new people found PenguinMod*** and we sent our website to ***$2*** returning users."
+                        "In the last month, ***$1 new people found GaiaMod*** and we sent our website to ***$2*** returning users."
                     )
                     .replace('$1', (25000).toLocaleString())
                     .replace('$2', (55000).toLocaleString())}`)}
@@ -101,7 +101,7 @@
                     {@html generateMarkdown(`${TranslationHandler.textSafe(
                         "donate.people2",
                         currentLang,
-                        "Some people even use PenguinMod from the **United Kingdom**, **Japan**, **Brazil**, **Russia**, and more."
+                        "Some people even use GaiaMod from the **United Kingdom**, **Japan**, **Brazil**, **Russia**, and more."
                     )}`)}
                 </p>
                 <p>
@@ -126,7 +126,7 @@
                         </p>
                         <a
                             target="_blank"
-                            href="https://www.patreon.com/cw/PenguinMod"
+                            href="https://www.patreon.com/cw/GaiaMod"
                             style="text-decoration: none !important;"
                         >
                             <button
@@ -192,7 +192,7 @@
                 <!-- other stuff -->
                 <p class="small">
                     <LocalizedText
-                        text="PenguinMod is not affiliated with Scratch, TurboWarp, the Scratch Team, or the Scratch Foundation."
+                        text="GaiaMod is not affiliated with Scratch, TurboWarp, the Scratch Team, or the Scratch Foundation."
                         key="home.footer.notaffiliated"
                         lang={currentLang}
                     />

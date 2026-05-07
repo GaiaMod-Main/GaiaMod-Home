@@ -273,20 +273,20 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Report</title>
-    <meta name="title" content="PenguinMod - Report" />
-    <meta property="og:title" content="PenguinMod - Report" />
-    <meta property="twitter:title" content="PenguinMod - Report" />
+    <title>GaiaMod - Report</title>
+    <meta name="title" content="GaiaMod - Report" />
+    <meta property="og:title" content="GaiaMod - Report" />
+    <meta property="twitter:title" content="GaiaMod - Report" />
     <meta
         name="description"
-        content="Report a specific project or user on PenguinMod."
+        content="Report a specific project or user on GaiaMod."
     />
     <meta
         property="twitter:description"
-        content="Report a specific project or user on PenguinMod."
+        content="Report a specific project or user on GaiaMod."
     />
-    <meta property="og:url" content="https://penguinmod.com/report" />
-    <meta property="twitter:url" content="https://penguinmod.com/report" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/report" />
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/report" />
 </svelte:head>
 
 <NavigationBar />

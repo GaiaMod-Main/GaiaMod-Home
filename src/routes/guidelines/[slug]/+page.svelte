@@ -41,14 +41,14 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Uploading Guidelines</title>
-    <meta name="title"                   content="PenguinMod - Uploading Guidelines" />
-    <meta property="og:title"            content="PenguinMod - Uploading Guidelines" />
-    <meta property="twitter:title"       content="PenguinMod - Uploading Guidelines">
-    <meta name="description"             content="PenguinMod's official rules on uploaded projects">
-    <meta property="twitter:description" content="PenguinMod's official rules on uploaded projects">
-    <meta property="og:url"              content="https://penguinmod.com/guidelines/uploading">
-    <meta property="twitter:url"         content="https://penguinmod.com/guidelines/uploading">
+    <title>GaiaMod - Uploading Guidelines</title>
+    <meta name="title"                   content="GaiaMod - Uploading Guidelines" />
+    <meta property="og:title"            content="GaiaMod - Uploading Guidelines" />
+    <meta property="twitter:title"       content="GaiaMod - Uploading Guidelines">
+    <meta name="description"             content="GaiaMod's official rules on uploaded projects">
+    <meta property="twitter:description" content="GaiaMod's official rules on uploaded projects">
+    <meta property="og:url"              content="https://gaiamod-main.github.io/GaiaMod-Home/guidelines/uploading">
+    <meta property="twitter:url"         content="https://gaiamod-main.github.io/GaiaMod-Home/guidelines/uploading">
 </svelte:head>
 
 <div class="container">

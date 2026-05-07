@@ -114,14 +114,14 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - {headerText}</title>
-    <meta name="title"                   content="PenguinMod - {headerText}" />
-    <meta property="og:title"            content="PenguinMod - {headerText}" />
-    <meta property="twitter:title"       content="PenguinMod - {headerText}">
-    <meta name="description"             content="View this event on PenguinMod's website!">
-    <meta property="twitter:description" content="View this event on PenguinMod's website!">
-    <meta property="og:url"              content="https://penguinmod.com/events/{eventPath}">
-    <meta property="twitter:url"         content="https://penguinmod.com/events/{eventPath}">
+    <title>GaiaMod - {headerText}</title>
+    <meta name="title"                   content="GaiaMod - {headerText}" />
+    <meta property="og:title"            content="GaiaMod - {headerText}" />
+    <meta property="twitter:title"       content="GaiaMod - {headerText}">
+    <meta name="description"             content="View this event on GaiaMod's website!">
+    <meta property="twitter:description" content="View this event on GaiaMod's website!">
+    <meta property="og:url"              content="https://gaiamod-main.github.io/GaiaMod-Home/events/{eventPath}">
+    <meta property="twitter:url"         content="https://gaiamod-main.github.io/GaiaMod-Home/events/{eventPath}">
 </svelte:head>
 
 <div class="container">

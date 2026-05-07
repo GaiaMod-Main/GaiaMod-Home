@@ -148,22 +148,22 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Change Password</title>
-    <meta name="title" content="PenguinMod - Change Password" />
-    <meta property="og:title" content="PenguinMod - Change Password" />
-    <meta property="twitter:title" content="PenguinMod - Change Password" />
+    <title>GaiaMod - Change Password</title>
+    <meta name="title" content="GaiaMod - Change Password" />
+    <meta property="og:title" content="GaiaMod - Change Password" />
+    <meta property="twitter:title" content="GaiaMod - Change Password" />
     <meta
         name="description"
-        content="Change your password for PenguinMod to access your account with a new password"
+        content="Change your password for GaiaMod to access your account with a new password"
     />
     <meta
         property="twitter:description"
-        content="Change your password for PenguinMod to access your account with a new password"
+        content="Change your password for GaiaMod to access your account with a new password"
     />
-    <meta property="og:url" content="https://penguinmod.com/changepassword" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/changepassword" />
     <meta
         property="twitter:url"
-        content="https://penguinmod.com/changepassword"
+        content="https://gaiamod-main.github.io/GaiaMod-Home/changepassword"
     />
 </svelte:head>
 
@@ -176,7 +176,7 @@
         <div class="profile-section">
             <img src="/account/profile_sheet.png" alt="Profiles" />
         </div>
-        <h1 style="margin-block:4px">PenguinMod</h1>
+        <h1 style="margin-block:4px">GaiaMod</h1>
         <p>
             <LocalizedText
                 text="Change Your Password"

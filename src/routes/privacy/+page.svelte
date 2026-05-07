@@ -55,7 +55,7 @@ Language.onChange((lang) => {
         </p>
         <p>
             You may see websites such as <a href="https://scratch.mit.edu/">"Scratch"</a>,
-            <a href="https://turbowarp.org/">"TurboWarp"</a>, <a href="https://penguinmod.com/">"PenguinMod"</a>, <a href="https://oauth2.scratch-wiki.info/">"Scratch OAuth2"</a>,
+            <a href="https://turbowarp.org/">"TurboWarp"</a>, <a href="https://penguinmod.com/">"GaiaMod"</a>, <a href="https://oauth2.scratch-wiki.info/">"Scratch OAuth2"</a>,
             and <a href="https://auth.itinerary.eu.org/">"Scratch Authentication"</a>
             referenced in multiple places.
         </p>
@@ -374,8 +374,8 @@ Language.onChange((lang) => {
 
         <h2>Contact</h2>
 
-        <p>Email us at <a href="mailto:penguinmodhelp@gmail.com">penguinmodhelp@gmail.com</a></p>
-        <p>Join <a href="https://discord.gg/NZ9MBMYTZh">our Discord Server</a></p>
+        <p>Email us at <a href="mailto:crystalfranks28@outlook.com">crystalfranks28@outlook.com</a></p>
+        <p>Join <a href="https://discord.gg/fFnNT8RGav">our Discord Server</a></p>
         
         <div style="width: 100%; height: 32px;"></div>
 

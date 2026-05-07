@@ -473,7 +473,7 @@
                         message = TranslationHandler.textSafe(
                             "uploading.error.illegalwordsused",
                             currentLang,
-                            "Words or phrases were used that are not allowed in PenguinMod. Please check through your project's details for any inappropriate words or phrases."
+                            "Words or phrases were used that are not allowed in GaiaMod. Please check through your project's details for any inappropriate words or phrases."
                         );
                         break;
                     default:
@@ -776,20 +776,20 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Upload</title>
-    <meta name="title" content="PenguinMod - Upload" />
-    <meta property="og:title" content="PenguinMod - Upload" />
-    <meta property="twitter:title" content="PenguinMod - Upload" />
+    <title>GaiaMod - Upload</title>
+    <meta name="title" content="GaiaMod - Upload" />
+    <meta property="og:title" content="GaiaMod - Upload" />
+    <meta property="twitter:title" content="GaiaMod - Upload" />
     <meta
         name="description"
-        content="Upload your project to PenguinMod, for the whole world to see."
+        content="Upload your project to GaiaMod, for the whole world to see."
     />
     <meta
         property="twitter:description"
-        content="Upload your project to PenguinMod, for the whole world to see."
+        content="Upload your project to GaiaMod, for the whole world to see."
     />
-    <meta property="og:url" content="https://penguinmod.com/upload" />
-    <meta property="twitter:url" content="https://penguinmod.com/upload" />
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/upload" />
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/upload" />
 </svelte:head>
 
 <NavigationBar />
@@ -961,11 +961,11 @@
                 <div class="card-projects">
                     <iframe
                         title="Guidelines Page"
-                        src="https://studio.penguinmod.com/PenguinMod-Guidelines/PROJECTS"
+                        src="https://studio.penguinmod.com/GaiaMod-Guidelines/PROJECTS"
                     />
                 </div>
                 <a
-                    href="https://studio.penguinmod.com/PenguinMod-Guidelines/PROJECTS"
+                    href="https://studio.penguinmod.com/GaiaMod-Guidelines/PROJECTS"
                     style="margin-top:6px;color:dodgerblue"
                     target="_blank"
                 >

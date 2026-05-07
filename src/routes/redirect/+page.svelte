@@ -41,7 +41,7 @@
         urlOrigin = urlObj.hostname;
     } catch {
         if (!browser) {
-            url = 'https://penguinmod.com/';
+            url = 'https://gaiamod-main.github.io/GaiaMod-Home/';
             urlOrigin = 'Unknown';
         } else {
             location.href = location.origin + '/error?error=404';
@@ -66,14 +66,14 @@
 </script>
 
 <svelte:head>
-    <title>PenguinMod - Redirecting</title>
-    <meta name="title" content="PenguinMod - Home" />
-    <meta property="og:title" content="PenguinMod - Home" />
-    <meta property="twitter:title" content="PenguinMod - Home">
+    <title>GaiaMod - Redirecting</title>
+    <meta name="title" content="GaiaMod - Home" />
+    <meta property="og:title" content="GaiaMod - Home" />
+    <meta property="twitter:title" content="GaiaMod - Home">
     <meta name="description" content="The area where featured projects and community stuff & info is shown.">
     <meta property="twitter:description" content="The area where featured projects and community stuff & info is shown.">
-    <meta property="og:url" content="https://penguinmod.com/">
-    <meta property="twitter:url" content="https://penguinmod.com/">
+    <meta property="og:url" content="https://gaiamod-main.github.io/GaiaMod-Home/">
+    <meta property="twitter:url" content="https://gaiamod-main.github.io/GaiaMod-Home/">
 </svelte:head>
 
 <NavigationBar />
@@ -88,14 +88,14 @@
     />
     <h1>
         <LocalizedText
-            text="You are leaving PenguinMod"
+            text="You are leaving GaiaMod"
             key="redirect.title"
             lang={currentLang}
         />
     </h1>
     <p>
         <LocalizedText
-            text="You are leaving PenguinMod to visit &qt;{"{{WEBSITE_URL}}"}. Content on this site may not be safe for everyone."
+            text="You are leaving GaiaMod to visit &qt;{"{{WEBSITE_URL}}"}. Content on this site may not be safe for everyone."
             key="redirect.message1"
             html={true}
             replace={{
