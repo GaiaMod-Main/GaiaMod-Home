@@ -1176,12 +1176,14 @@
         --gaiamod-section-info-color: hsla(240, 65%, 55%, 1);
         --gaiamod-section-links-color: hsla(240, 65%, 60%, 1);
         --gaiamod-footer-color: #CFD2FF;
+        --gaiamod-footer-color-links: #00058A;
     }
     :global(body.dark-mode) {
         --gaiamod-color: #2424A8;
         --gaiamod-section-info-color: hsla(240, 65%, 50%, 1);
         --gaiamod-section-links-color: hsla(240, 65%, 55%, 1);
         --gaiamod-footer-color: #00058A;
+        --gaiamod-footer-color-links: #CFD2FF;
     }
 
     * {
@@ -1203,12 +1205,12 @@
         /* border-top-right-radius: 20%; */
     }
     .footer a {
-        color: #000070;
+        color: var(--gaiamod-footer-color-links);
         font-weight: normal;
         margin: 2px 0px;
     }
     .footer a:active {
-        color: rgb(15, 77, 139);
+        color: var(--gaiamod-footer-color-links);
     }
     .footer-list {
         display: flex;
