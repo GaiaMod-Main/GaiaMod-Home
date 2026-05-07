@@ -383,11 +383,11 @@ Language.onChange((lang) => {
         <p>Join <a href="https://discord.gg/fFnNT8RGav">our Discord Server</a></p>
         
         <div style="width: 100%; height: 32px;"></div>
+
         <p>
             <p><a href="https://www.youtube.com/@GaiaWindWave90">Head developer's YouTube profile</a></p>
         </p>
-          <h4>Also while your here check out the flag counter we have.<h4>
-                <iframe src="https://nmsderp.is-a.dev/flag-counter.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+        
         <div style="width: 100%; height: 32px;"></div>
     </main>
 </div>
