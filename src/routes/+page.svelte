@@ -325,15 +325,15 @@
 
     <Alert
         onlyShowID={"donatee:_3"}
-        text={"GaiaMod is a free-to-use powerful visual coding website based on PenguinMod. Your support can help us keep the website working!"}
+        text={"GaiaMod is a powerful free-to-use visual coding website/game engine based off of PenguinMod."}
         textBreakup={true}
         textColor={"white"}
         hasImage={true}
-        imgSrc={"/happy.svg"}
+        imgSrc={"happy.svg"}
         imgAlt={":D"}
         hasButton={true}
-        buttonText={"Support"}
-        buttonHref={"/support"}
+        buttonText={"Try it!"}
+        buttonHref={"/editor.html"}
     />
     <StatusAlert />
     <Alert
@@ -367,7 +367,7 @@
                     >
                 </h1>
                 <Button
-                    label="<img src='/tryit.svg' width='32px' style='margin-right:8px'></img>"
+                    label="<img src='tryit.svg' width='32px' style='margin-right:8px'></img>"
                     highlighted="true"
                     link={LINK.editor}
                 >
@@ -783,7 +783,7 @@
                     }}
                 >
                     <LocalizedText
-                        text="PenguinNews"
+                        text="Gaia News"
                         key="home.sections.informational"
                         lang={currentLang}
                     />
