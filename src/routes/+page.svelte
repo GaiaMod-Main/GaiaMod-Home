@@ -449,13 +449,6 @@
                     lang={currentLang}
                 />
             </Button>
-            <Button link={"/support"}>
-                <LocalizedText
-                    text="Funding"
-                    key="home.footer.sections.donate"
-                    lang={currentLang}
-                />
-            </Button>
             <Button label="GitHub" link={LINK.github} />
         </div>
     {/if}
@@ -817,7 +810,7 @@
                             />
                             <p>
                                 <LocalizedText
-                                    text="Uh-oh! Our server's having some problems. Try again later."
+                                    text="Uh-oh! Our server's having some problems. Try again later. Or if you're on a school computer, our server may be blocked. You can still make a project."
                                     key="home.server.error"
                                     lang={currentLang}
                                 />
@@ -888,7 +881,7 @@
                             />
                             <p>
                                 <LocalizedText
-                                    text="Uh-oh! Our server's having some problems. Try again later."
+                                    text="Uh-oh! Our server's having some problems. Try again later. Or if you're on a school computer, our server may be blocked. You can still make a project."
                                     key="home.server.error"
                                     lang={currentLang}
                                 />
@@ -959,7 +952,7 @@
                                 />
                                 <p>
                                     <LocalizedText
-                                        text="Uh-oh! Our server's having some problems. Try again later."
+                                        text="Uh-oh! Our server's having some problems. Try again later. Or if you're on a school computer, our server may be blocked. You can still make a project."
                                         key="home.server.error"
                                         lang={currentLang}
                                     />
