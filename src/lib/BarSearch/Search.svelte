@@ -19,7 +19,7 @@
             return;
         }
         location.href =
-            location.origin + `https://penguinmod.com/search?q=${encodeURIComponent(query)}`;
+            `https://penguinmod.com/search?q=${encodeURIComponent(query)}`;
     }
     function enterCheck(event) {
         if (event.key === "Enter") {
