@@ -347,7 +347,7 @@ Language.onChange((lang) => {
             <br>
             <br>
             GaiaMod will not ask the user to confirm this action if the project is compiled using
-            <a href="{PUBLIC_STUDIO_URL}/GaiaMod-Packager/">the GaiaMod packager.</a>
+            <a href="https://gaiamod-main.github.io/GaiaMod-Packager/">the GaiaMod packager.</a>
             <br>
             In this case it is up to the user's browser to prompt the user if they would like to allow the website
             to access their location.
@@ -385,12 +385,12 @@ Language.onChange((lang) => {
         <div style="width: 100%; height: 32px;"></div>
 
         <p>
-            <a href="/terms">Terms of Service</a>
+            <a href="https://www.youtube.com/@GaiaWindWave90">Head developer's YouTube profile</a>
         </p>
-        <p>
-            <a href="{PUBLIC_STUDIO_URL}/contact.html">Contact Us</a>
-        </p>
-        
+             <h4>Also while your here check out the flag counter we have.<h4>
+                <iframe src="https://nmsderp.is-a.dev/flag-counter.html" style="border:0px #ffffff none;" name=
+				"myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+		
         <div style="width: 100%; height: 32px;"></div>
     </main>
 </div>
