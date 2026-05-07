@@ -347,7 +347,7 @@ Language.onChange((lang) => {
             <br>
             <br>
             GaiaMod will not ask the user to confirm this action if the project is compiled using
-            <a href="https://gaiamod-main.github.io/GaiaMod-Packager/">the GaiaMod packager.</a>
+            <a href="{PUBLIC_STUDIO_URL}/GaiaMod-Packager/">the GaiaMod packager.</a>
             <br>
             In this case it is up to the user's browser to prompt the user if they would like to allow the website
             to access their location.
@@ -385,7 +385,10 @@ Language.onChange((lang) => {
         <div style="width: 100%; height: 32px;"></div>
 
         <p>
-            <p><a href="https://www.youtube.com/@GaiaWindWave90">Head developer's YouTube profile</a></p>
+            <a href="/terms">Terms of Service</a>
+        </p>
+        <p>
+            <a href="{PUBLIC_STUDIO_URL}/contact.html">Contact Us</a>
         </p>
         
         <div style="width: 100%; height: 32px;"></div>
