@@ -1030,10 +1030,17 @@
                             />
                             <p>
                                 <LocalizedText
-                                    text="Uh-oh! Our server's having some problems. Try again later."
+                                    text="Uh-oh! Our server's having some problems. Try again later. Or if you're on a school computer, our server may be blocked. You can still make a project."
                                     key="home.server.error"
                                     lang={currentLang}
                                 />
+								<Button link={LINK.editor}>
+                                <LocalizedText
+                                    text="Create a project"
+                                    key="home.footer.sections.website.createAProject"
+                                    lang={currentLang}
+                                />
+                            </Button>
                             </p>
                         {/if}
                     </div>
