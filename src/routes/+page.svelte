@@ -325,7 +325,7 @@
 
     <Alert
         onlyShowID={"donatee:_3"}
-        text={"GaiaMod is a free-to-use visual coding website. Your support can help us keep the website working!"}
+        text={"GaiaMod is a free-to-use powerful visual coding website. Your support can help us keep the website working!"}
         textBreakup={true}
         textColor={"white"}
         hasImage={true}
