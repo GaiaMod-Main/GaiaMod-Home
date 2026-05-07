@@ -1189,14 +1189,14 @@
         width: 100%;
         padding: 24px 0px 48px;
         border-top: rgba(0, 0, 0, 0.3) 1px solid;
-        background: #00c3ff15;
+        background-color: #CFD2FF;
         font-weight: bold;
         margin-top: 4px;
         /* border-top-left-radius: 20%; */
         /* border-top-right-radius: 20%; */
     }
     .footer a {
-        color: dodgerblue;
+        color: #000070;
         font-weight: normal;
         margin: 2px 0px;
     }
@@ -1262,7 +1262,7 @@
     }
 
     .section-info {
-        background: #ADD5FF;
+        background: hsla(240, 65%, 55%, 1);
         height: 24rem;
         color: white;
         display: flex;
@@ -1276,7 +1276,7 @@
         justify-content: space-around;
     }
     .section-links {
-        background: #0011FF;
+        background: hsla(240, 65%, 60%, 1);
         color: white;
         display: flex;
         flex-direction: row;
