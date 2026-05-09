@@ -1,2 +1,2 @@
-# PenguinMod-Home
-The main home page for PenguinMod, which has community-made projects and other content.
+# GaiaMod-Home
+The main home page for GaiaMod, which has community-made projects and other content.
