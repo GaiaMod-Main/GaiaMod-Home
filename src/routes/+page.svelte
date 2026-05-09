@@ -399,13 +399,16 @@
                 </video>
                 {:else}
                     <iframe
-                    src="/eao.html"
-                    title="The Thingy"
-                    width="426.666667"
-                    height="240"
-                    frameborder="0"
-                    class="example-video"
-                />
+                        width="560"
+                        height="315"
+                        src="https://www.youtube-nocookie.com/embed/4AyrQg4xXI4"
+                        title="LOL!"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        class="example-video"
+                    />
                 {/if}
             {:else}
                 <img
