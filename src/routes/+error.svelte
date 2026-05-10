@@ -6,7 +6,7 @@
     import NavigationMargin from "$lib/NavigationBar/NavMargin.svelte";
 
     // Icons
-    import PenguinConfusedSVG from "../icons/Penguin/confused.svelte";
+    //import PenguinConfusedSVG from "../icons/Penguin/confused.svelte";
 </script>
 
 <head>
@@ -22,7 +22,6 @@
     <h1>Uh-Oh!</h1>
     <p>
         There is this page that doesn't exist! You should <a href="../">go back</a> to be safe.<br>
-        <a href="https://info.flagcounter.com/c39u"><img src="https://s01.flagcounter.com/count2/c39u/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_250/viewers_0/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
     </p>
 
     <p>Error: {$page.status} - {$page.error.message}</p>
