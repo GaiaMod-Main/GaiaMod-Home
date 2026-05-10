@@ -5,8 +5,6 @@
     import NavigationBar from "$lib/NavigationBar/NavigationBar.svelte";
     import NavigationMargin from "$lib/NavigationBar/NavMargin.svelte";
 
-    // Icons
-    import PenguinConfusedSVG from "../icons/Penguin/confused.svelte";
 </script>
 
 <head>
@@ -17,8 +15,6 @@
 <NavigationMargin />
 
 <div class="center-div">
-    <PenguinConfusedSVG height="12rem" />
-
     <h1>Uh-Oh!</h1>
     <p>
         There is this page that doesn't exist! You should <a href="../">go back</a> to be safe.<br>
