@@ -855,6 +855,21 @@
                 alert(`Failed to unban user; ${err}`);
             });
     };
+	
+ const givecoins = () => {
+        const promptMessage = prompt(
+            `Are you sure you want to give 25 coins ${banOrUnbanData.username}? Type "ok" to confirm.`,
+        );
+        if (promptMessage !== "ok") return;
+        ProjectClient.givecoins(banOrUnbanData.username, banOrUnbanData.reason)
+            .then(() => {
+                alert(`Gave 25 coins to ${banOrUnbanData.username}.`);
+            })
+            .catch((err) => {
+                console.error(err);
+                alert(`Failed to give coins to user; ${err}`);
+            });
+    };
 
     const userBadgeInfo = {
         isEditingMulti: false,
@@ -1831,6 +1846,12 @@
                     <div class="user-action-row">
                         <Button color="red" on:click={deleteAccount}
                             >Delete User Account</Button
+                        >
+                    </div>
+                     <br />
+                    <div class="user-action-row">
+                        <Button color="blue" on:click={givecoins}
+                            >Give Coins To User</Button
                         >
                     </div>
                     <br />
