@@ -6,7 +6,7 @@
     import NavigationMargin from "$lib/NavigationBar/NavMargin.svelte";
 
     // Icons
-    //import PenguinConfusedSVG from "../icons/Penguin/confused.svelte";
+    import PenguinConfusedSVG from "../icons/Penguin/confused.svelte";
 </script>
 
 <head>
