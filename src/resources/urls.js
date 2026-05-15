@@ -6,7 +6,7 @@ export default {
     /**
      * Gaia-Zone
      */
-    originpage: `https://gaiawindwave90.github.io/`,
+    originpage: `https://gaiawindwave90.github.io/GaiaMod-Home/`,
 	
     /**
      * Gaia'S Commits
